@@ -17,7 +17,6 @@ def main():
     parser.add_argument('--allow-overwrite', action='store_true', default=False)
 
     args = parser.parse_args()
-    print(args.allow_overwrite)
 
     if hasattr(args, "all_name"):
       cluster_name = args.all_name
