@@ -40,7 +40,6 @@ def main():
       source_kubeconfig["clusters"][0]["name"] = cluster_name
       for i, k in enumerate(target_kubeconfig["clusters"]):
         if target_kubeconfig["clusters"][i]["name"] == cluster_name:
-          print(i)
           target_kubeconfig["clusters"][i] = source_kubeconfig["clusters"][0]
     else:
         print(f"cluster named {cluster_name} already present, use a different name")
